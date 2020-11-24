@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
 }
 body{
-	overflow-x: hidden;
+	overflow-x: hidden !important;		
+	background: #F8F8F8;
 }
 
 /* navbar */
@@ -11,7 +14,7 @@ nav{
 	display: flex;
 	background: #F8F8F8;
 	height: 70px;
-	align-items: center;
+	align-items: center !important;
 	justify-content: space-around;
 }
 nav .logo a img{
@@ -21,53 +24,98 @@ nav ul{
 	display: flex;
 	list-style: none;
 	width: 15%;
-	justify-content: space-between;
+	justify-content: space-between;	
 }
 nav ul li a{
-	text-decoration: none;
-	color: grey;
-	font-size: 1em;
+	text-decoration: none !important;
+	color: grey;	
+	font-size: 0.9em;
 }
 nav ul li a:hover{
 	color: lightgrey;
 }
-	/* humberger menu */
-	.menu-toggle{
-		display: none;
-		flex-direction: column;
-		height: 20px;
-		justify-content:space-between;
-		cursor: pointer;
-	}
-	.menu-toggle span{
-		display: block;
-		width: 28px;
-		height: 3px;
-		background: grey;
-		border-radius: 5px;
-		transition: all 0.5s;
-	}
-	.menu-toggle span:nth-child(1){
-		transform-origin: 0 0;
-	}
-	.menu-toggle span:nth-child(3){
-		transform-origin: 0 100%;
-	}
-	.menu-toggle.animation span:nth-child(1){
-		transform: rotate(45deg) translate(-1px, -1px);
-		background: lightgrey;
-	}
-	.menu-toggle.animation span:nth-child(2){
-		transform: scale(0);
-		opacity: 0;
-	}
-	.menu-toggle.animation span:nth-child(3){
-		transform: rotate(-45deg) translate(-1px, 0);
-		background: lightgrey;
-	}
-	/* /humberger menu */
+/* humberger menu */
+.menu-toggle{
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content:space-between;
+	cursor: pointer;
+}
+.menu-toggle span{
+	display: block;
+	width: 28px;
+	height: 3px;
+	background: grey;
+	border-radius: 5px;
+	transition: all 0.5s;
+}
+.menu-toggle span:nth-child(1){
+	transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(3){
+	transform-origin: 0 100%;
+}
+.menu-toggle.animation span:nth-child(1){
+	transform: rotate(45deg) translate(-1px, -1px);
+	background: lightgrey;
+}
+.menu-toggle.animation span:nth-child(2){
+	transform: scale(0);
+	opacity: 0;
+}
+.menu-toggle.animation span:nth-child(3){
+	transform: rotate(-45deg) translate(-1px, 0);
+	background: lightgrey;
+}
+/* /humberger menu */
 
 /* /navbar */
+
+/* content */
+.content{
+	background: #F8F8F8;
+}
+/* /content */
+
+/* header */
+.header{
+	background: #F8F8F8;
+}
+.header .socialMedia i{
+	font-size: 	35px;
+	padding: 0 15px;
+	color: 	darkgrey;
+	margin-top: 13px;
+	transition: .2s
+}
+.header .socialMedia i:hover{
+	transform: scale(1.2);
+	color: #03a9f4;
+}
+/* /header */
+
+/* about */
+.about{
+	background: #F8F8F8;
+	font-family: 'Open Sans', sans-serif;
+}
+.about .name{
+	font-size: 50px;
+	margin-top: 70px;
+}
+.about .title{
+	font-size: 25px;
+}
+.about .title:after{
+	content:'';
+	display: block;
+	border-bottom: 5px solid #03a9f4;
+	width: 10%;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+/* /about */
 
 
 /* --------------------------------------- */
@@ -92,16 +140,15 @@ nav ul li a:hover{
 		position: absolute;
 		right: 0; 
 		flex-direction: column;
-		background: black;
-		width: 80%;
+		background: #2c2f33;
+		width: 100%;
 		top: 0;
 		height: 100vh;
 		align-items: center;
 		justify-content: space-evenly;
-		z-index:-1;
 		transform: translateX(100%);
 		transition: all .8s;
-		opacity: 0;
+		opacity: 0;	
 	}
 	nav ul.slide{
 		transform: translateX(0);	
@@ -109,6 +156,40 @@ nav ul li a:hover{
 	}
 	.menu-toggle{
 		display: flex;
+		position: relative;
+		z-index: 1;
 	}
 	/* /navbar */
+
+	/* content */
+	.content{
+		position: absolute;
+		z-index: -1;
+	}
+	/* header */
+	.header .socialMedia a i{
+		font-size: 25px;
+		padding: 0 7px;
+		margin-top: 13px;
+	}
+	/* /header */
+
+	/* about */
+	.about{
+		text-align: center !important;
+	}
+	.about .name{
+		font-size: 40px;
+		margin-top: 50px;
+	}
+	.about .title{
+		font-size: 20px;
+	}
+	.about .title:after{
+		border-bottom: 5px solid #03a9f4;
+		width: 15%;
+		margin-left: 45%;
+	}
+	/* /about */
+
 }
