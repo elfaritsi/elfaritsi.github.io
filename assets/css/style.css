@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
 	margin: 0;
@@ -82,6 +83,9 @@ nav ul li a:hover{
 .header{
 	background: #F8F8F8;
 }
+.header img{
+	margin-top: 20px;
+}
 .header .socialMedia i{
 	font-size: 	35px;
 	padding: 0 15px;
@@ -111,9 +115,42 @@ nav ul li a:hover{
 	content:'';
 	display: block;
 	border-bottom: 5px solid #03a9f4;
-	width: 10%;
+	width: 5%;
 	margin-top: 10px;
 	border-radius: 5px;
+}
+.about .desc{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	width: 70%;
+	color: #777777;
+}
+.about .aboutButton{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.about .aboutButton a{
+	font-size: 20px;
+	padding:10px 30px;
+	background: #03a9f4;
+	border-radius: 40px;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: .2s;
+}
+.about .aboutButton a.work:hover{
+	background: #0296d9;
+}
+.about .aboutButton a.resume{
+	background: #fff !important;
+	color: #03a9f4;
+	box-shadow: 0 2px 20px .1px rgba(0, 0, 0, .1);
+	transition: .2s;
+}
+.about .aboutButton a.resume:hover{
+	background: #bbbbbb !important;
+	color: #FFFFFF;
+	box-shadow: none;
 }
 /* /about */
 
@@ -187,8 +224,24 @@ nav ul li a:hover{
 	}
 	.about .title:after{
 		border-bottom: 5px solid #03a9f4;
-		width: 15%;
+		width: 10%;
 		margin-left: 45%;
+	}
+	.about .desc{
+		text-align: center !important;
+		width: 100%;
+		font-size: 13px;
+	}
+	.about .aboutButton{
+		text-align: center !important;
+	}
+	.about .aboutButton a{
+		font-size: 15px;
+		padding:10px 15px;
+	}
+	.about .aboutButton a.resume{
+		box-shadow: 0 1px 7px .1px rgba(0, 0, 0, .1);
+		
 	}
 	/* /about */
 
