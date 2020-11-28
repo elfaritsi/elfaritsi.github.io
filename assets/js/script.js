@@ -7,3 +7,14 @@ menu.addEventListener('click', () => {
 });
 
 
+// // assign function to onclick property of checkbox
+// document.querySelector('#customSwitch').onclick = function() {
+//     // access properties using this keyword
+//     if ( this.checked ) {
+//         alert("Ok");
+//     } else {
+//         alert("not Ok");
+//     }
+// };
+
+

@@ -79,6 +79,23 @@ nav ul li a:hover{
 }
 /* /content */
 
+/* swicth toggle */
+.switchIndo{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+.switchIndo img{
+	height: 25px;
+	margin-top: -5px;
+}
+.swicthIndo .custom-control-input:checked ~ .switchIndo img {
+	height: 50px;
+	width: 50px;
+}
+
+/* /swicth toggle */
+
 /* header */
 .header{
 	background: #F8F8F8;
@@ -155,6 +172,43 @@ nav ul li a:hover{
 /* /about */
 
 
+/* skills */
+.skills{
+	margin-top: 100px;
+}
+.skills h3{
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+}
+.skills h3:after{
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	border-bottom: 5px solid #03a9f4;
+	width: 6%;
+	border-radius: 5px;
+}
+.skills .card{
+	text-align: center !important;
+	border-radius: 10px;
+	border: none;
+	background: #FFFFFF !important;
+	margin-bottom: 25px;
+	box-shadow: 0 0 10px rgba(0,0,0, .1);
+}
+.skills .card img{
+	transition: all .2s ease-in-out;
+	filter: grayscale(95%);
+}
+.skills .card img:hover{
+	transform: scale(1.1);
+}
+
+
+/* /skills */
+
 /* --------------------------------------- */
 
 /* Responsive */
@@ -173,6 +227,15 @@ nav ul li a:hover{
 /* mobile */
 @media screen and (max-width: 576px) {
 	/* navbar */
+	nav{
+		justify-content: space-between !important;
+	}
+	nav .logo{
+		margin-left: 30px;
+	}
+	nav span{
+		margin-right: 30px;
+	}
 	nav ul{
 		position: absolute;
 		right: 0; 
@@ -185,7 +248,8 @@ nav ul li a:hover{
 		justify-content: space-evenly;
 		transform: translateX(100%);
 		transition: all .8s;
-		opacity: 0;	
+		opacity: 0;
+		font-family: 'Montserrat', sans-serif;
 	}
 	nav ul.slide{
 		transform: translateX(0);	
@@ -203,6 +267,18 @@ nav ul li a:hover{
 		position: absolute;
 		z-index: -1;
 	}
+	/* /content */
+
+	/* swicth toggle */
+	.switchIndo img{
+		height: 20px;
+		margin-top: -5px;
+		margin-right: 15px;
+	}
+
+	/* /swicth toggle */
+
+
 	/* header */
 	.header .socialMedia a i{
 		font-size: 25px;
@@ -225,7 +301,8 @@ nav ul li a:hover{
 	.about .title:after{
 		border-bottom: 5px solid #03a9f4;
 		width: 10%;
-		margin-left: 45%;
+		margin: auto;
+		margin-top: 10px;
 	}
 	.about .desc{
 		text-align: center !important;
@@ -244,5 +321,22 @@ nav ul li a:hover{
 		
 	}
 	/* /about */
+
+
+	/* skills */
+	.skills{
+		margin-top: 70px;
+	}
+	.skills h3{
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	.skills h3:after{
+		width: 10%;
+	}
+	.skills .card{
+		margin-bottom: 20px;
+	}
+	/* /skills */
 
 }
