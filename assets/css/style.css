@@ -31,6 +31,8 @@ nav ul li a{
 	text-decoration: none !important;
 	color: grey;	
 	font-size: 0.9em;
+	font-family: 'Open Sans', sans-serif;
+	transition: .2s;
 }
 nav ul li a:hover{
 	color: lightgrey;
@@ -171,6 +173,32 @@ nav ul li a:hover{
 }
 /* /about */
 
+/* portfolio */
+.portfolio{
+	margin-top: 100px;
+	font-family: 'Montserrat', sans-serif;
+}
+.portfolio h3{
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 40px;	
+}
+.portfolio h3:after{
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	border-bottom: 5px solid #03a9f4;
+	width: 6%;
+	border-radius: 5px;
+}
+.portfolio .text{
+	display: block;		
+	font-size: 17px !important;
+	color: #777777;
+	line-height: 28px;
+}
+/* /portfolio */
 
 /* skills */
 .skills{
@@ -196,15 +224,45 @@ nav ul li a:hover{
 	border: none;
 	background: #FFFFFF !important;
 	margin-bottom: 25px;
-	box-shadow: 0 0 10px rgba(0,0,0, .1);
+	display: none;	
 }
 .skills .card img{
 	transition: all .2s ease-in-out;
-	filter: grayscale(95%);
+	filter: grayscale(100%);
 }
 .skills .card img:hover{
 	transform: scale(1.1);
 }
+
+/* swiper */
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 10px !important;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+} 
+.swiper-pagination-bullet-active{
+	background-color: #03a9f4 !important;	
+}
+/* /swiper */
 
 
 /* /skills */
@@ -220,6 +278,16 @@ nav ul li a:hover{
 		width: 20%;
 	}
 	/* /navbar */
+
+	/* portfolio */
+	.portfolio h4{
+		text-align: center;	
+		margin-top: 20px;	
+	}
+	.portfolio .text{
+		text-align: center;	
+	}
+	/* /portfolio */
 }
 
 /* --------------------------------------- */
@@ -336,7 +404,37 @@ nav ul li a:hover{
 	}
 	.skills .card{
 		margin-bottom: 20px;
+		display: block;	
 	}
+	.swiper-container {
+		display: none;	
+	}
+
 	/* /skills */
 
+	.portfolio{
+		margin-top: 70px;
+	}
+	.portfolio h3{
+		
+		font-size: 30px;
+		margin-bottom: 30px;	
+	}
+	.portfolio h3:after{
+		width: 10%;
+	}
+	.portfolio h4{
+		font-size: 20px;
+		text-align: center;	
+		margin-top: 20px;	
+	}
+	.portfolio .text{
+		display: block;		
+		font-size: 13px !important;
+		line-height: 18px;
+		text-align: center;	
+	}
+	/* /portfolio */
+
+	
 }
