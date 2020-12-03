@@ -17,7 +17,6 @@ $(document).ready(function(){
 		imageColor      : "#03a9f4"
 	});
 
-	document.querySelector('.content').style.opacity = 0;	
 	$.LoadingOverlay("show");
 
 	setTimeout(function	(){

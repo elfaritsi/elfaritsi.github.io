@@ -78,6 +78,7 @@ nav ul li a:hover{
 /* content */
 .content{
 	background: #F8F8F8;
+	opacity: 0;	
 }
 /* /content */
 
@@ -156,6 +157,7 @@ nav ul li a:hover{
 	color: #FFFFFF;
 	text-decoration: none;
 	transition: .2s;
+	box-shadow: 0 1px 10px rgba(0,0,0, .2);
 }
 .about .aboutButton a.work:hover{
 	background: #0296d9;
@@ -175,7 +177,7 @@ nav ul li a:hover{
 
 /* portfolio */
 .portfolio{
-	margin-top: 100px;
+	margin-top: 150px;
 	font-family: 'Montserrat', sans-serif;
 }
 .portfolio h3{
@@ -192,17 +194,33 @@ nav ul li a:hover{
 	width: 6%;
 	border-radius: 5px;
 }
+.portfolio h4{
+	color: #03a9f4;
+}
 .portfolio .text{
 	display: block;		
 	font-size: 17px !important;
 	color: #777777;
 	line-height: 28px;
 }
+.portfolio .livePreview a{
+	background-color: #03a9f4;
+	color: #FFFFFF;
+	border-radius: 40px;
+	padding:10px 30px;
+	transition: .2s;
+	font-family: 'Open Sans', sans-serif;
+	box-shadow: 0 1px 10px rgba(0,0,0, .2);
+	margin-top: 50px;	
+}
+.portfolio .livePreview a:hover{
+	background: #0296d9;
+}
 /* /portfolio */
 
 /* skills */
 .skills{
-	margin-top: 100px;
+	margin-top: 150px;
 }
 .skills h3{
 	font-size: 45px;
@@ -264,8 +282,51 @@ nav ul li a:hover{
 }
 /* /swiper */
 
-
 /* /skills */
+
+/* work together */
+.workTogether{
+	margin-top: 150px;
+	font-family: 'Open Sans', sans-serif;
+}
+.workTogether h1{
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+.workTogether p{
+	font-family: 'Montserrat', sans-serif;
+	color: #777777;
+}
+.workTogether a{
+	background-color: #03a9f4;
+	color: #FFFFFF;
+	border-radius: 40px;
+	padding:10px 30px;
+	transition: .2s;
+	box-shadow: 0 1px 10px rgba(0,0,0, .2);	
+	margin-top: 35px;	
+}
+.workTogether a:hover{
+	background: #0296d9;
+	color: #FFFFFF;
+}
+/* /work together */
+
+/* footer */
+.footer{
+	background: #FFFFFF;	
+	margin-top: 150px;	
+	font-family: 'Open Sans', sans-serif;
+}
+.footer img{
+	height: 60px;
+	margin-right: 10px;
+}
+.footer .footer2 span{
+	font-family: 'Montserrat', sans-serif;	
+	font-size: 16px;		
+}
+/* /footer */
 
 /* --------------------------------------- */
 
@@ -288,6 +349,29 @@ nav ul li a:hover{
 		text-align: center;	
 	}
 	/* /portfolio */
+
+	/* footer */
+	.footer{	
+		margin-top: 100px;
+	}
+	.footer .footer1 img{
+		height: 40px;
+	}
+	.footer .footer1 h4{
+		font-size: 16px;
+	}
+	.footer .footer1 p{
+		font-size: 14px;
+		margin-top: -5px;
+	}
+	.footer .footer2{
+		margin-top: -20px;
+	}
+	.footer span{
+		font-size: 15px;
+	}
+	/* /footer */
+
 }
 
 /* --------------------------------------- */
@@ -434,7 +518,49 @@ nav ul li a:hover{
 		line-height: 18px;
 		text-align: center;	
 	}
+	.portfolio .livePreview{
+		text-align: center;	
+	}
+	.portfolio .livePreview a{
+		font-size: 15px;
+		padding:10px 20px;
+		margin-top: 15px;	
+	}
 	/* /portfolio */
 
+	/* work together */
+	.workTogether{
+		margin-top: 70px;
+	}
+	.workTogether h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.workTogether p{
+		font-size: 13px;	
+	}
+	.workTogether br{
+		display: none;	
+	}
+	.workTogether a{
+		padding:10px 20px;
+		margin-top: 15px;
+		font-size: 15px;
+	}
+	/* /work together */
 	
+	/* footer */
+	.footer{	
+		margin-top: 110px;
+	}
+	.footer .footer1{
+		display: none;
+	}
+	.footer .footer2{
+		text-align: center;
+	}
+	.footer span{
+		font-size: 15px;
+	}
+	/* /footer */
 }
