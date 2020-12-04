@@ -169,7 +169,7 @@ nav ul li a:hover{
 	transition: .2s;
 }
 .about .aboutButton a.resume:hover{
-	background: #bbbbbb !important;
+	background: #cccccc !important;
 	color: #FFFFFF;
 	box-shadow: none;
 }
@@ -362,13 +362,12 @@ nav ul li a:hover{
 	}
 	.footer .footer1 p{
 		font-size: 14px;
-		margin-top: -5px;
+		margin-top: -10px;
 	}
 	.footer .footer2{
-		margin-top: -20px;
 	}
 	.footer span{
-		font-size: 15px;
+		font-size: 13px !important;
 	}
 	/* /footer */
 
