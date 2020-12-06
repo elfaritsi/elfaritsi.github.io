@@ -8,6 +8,7 @@
 body{
 	overflow-x: hidden !important;		
 	background: #F8F8F8;
+	scroll-behavior: smooth !important;
 }
 
 /* navbar */
