@@ -56,14 +56,29 @@ var swiper = new Swiper('.swiper-container', {
       }
   });
 
-// // assign function to onclick property of checkbox
-// document.querySelector('#customSwitch').onclick = function() {
-//     // access properties using this keyword
-//     if ( this.checked ) {
-//         alert("Ok");
-//     } else {
-//         alert("not Ok");
-//     }
-// };
 
+// Switch Language
+const switchToggle = document.getElementById('customSwitch');
+switchToggle.addEventListener('change', () =>{
+      switchToggle.classList.toggle('aktif');
+
+      const check = document.querySelector('#customSwitch.aktif');
+      const indo = document.querySelectorAll('.in');
+      const eng = document.querySelectorAll('.en');
+      if(check){
+            for(let i = 0; i<indo.length; i++){
+                  indo[i].style.display = 'block';
+            }
+            for(let j = 0; j<eng.length; j++){
+                  eng[j].style.display = 'none';
+            }
+      }else{
+            for(let i = 0; i<indo.length; i++){
+                  indo[i].style.display = 'none';
+            }
+            for(let j = 0; j<eng.length; j++){
+                  eng[j].style.display = 'block';
+            }
+      }
+});
 
