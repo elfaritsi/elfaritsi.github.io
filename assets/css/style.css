@@ -8,7 +8,7 @@
 	margin: 0;
 	padding: 0;
 }
-body{
+body, html{
 	overflow-x: hidden !important;		
 	background: #F8F8F8;
 }
@@ -380,8 +380,8 @@ nav ul li a:hover{
 
 /* mobile */
 @media screen and (max-width: 576px) {
-        body, .content{ 
-                overflow: hidden!important;
+        .content{ 
+                overflow: hidden !important;
         }
 	/* navbar */
 	nav{
