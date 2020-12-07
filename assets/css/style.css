@@ -381,7 +381,7 @@ nav ul li a:hover{
 /* mobile */
 @media screen and (max-width: 576px) {
         body, html{ 
-                overflow: hidden !important;
+                overflow-x: hidden !important;
         }
 	/* navbar */
 	nav{
