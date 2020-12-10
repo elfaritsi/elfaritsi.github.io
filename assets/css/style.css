@@ -200,7 +200,7 @@ nav ul li select{
 	display: block;		
 	font-size: 17px !important;
 	color: #777777;
-	line-height: 28px;
+	line-height: 26px;
 }
 .portfolio .livePreview a{
 	background-color: #03a9f4;
@@ -525,6 +525,7 @@ nav ul li select{
 		display: block;		
 		font-size: 13px !important;
 		text-align: center;	
+		line-height: 20px;
 	}
 	.portfolio .livePreview{
 		text-align: center;	
