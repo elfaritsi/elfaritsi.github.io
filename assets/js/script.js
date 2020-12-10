@@ -17,12 +17,12 @@ $(document).ready(function(){
 		imageColor      : "#03a9f4"
 	});
 
-	// $.LoadingOverlay("show");
+	$.LoadingOverlay("show");
 
-	// setTimeout(function	(){
-	// 	$.LoadingOverlay("hide");
-	// 	document.querySelector('.content').style.opacity = 1;
-	// }, 2000);
+	setTimeout(function(){
+		$.LoadingOverlay("hide");
+		document.querySelector('.content').style.opacity = 1;
+	}, 2000);
 
 });
 
