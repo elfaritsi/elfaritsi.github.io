@@ -40,6 +40,19 @@ nav ul li a{
 nav ul li a:hover{
 	color: lightgrey;
 }
+nav ul li select{
+	margin-top: 25px !important;
+	margin-left: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	border-radius:50px;
+	border: 1px solid grey;
+	padding: 0 10px;
+	width: 130px;
+	outline: none;
+	color: grey;
+	background-color: none;
+}
 /* humberger menu */
 .menu-toggle{
 	display: none;
@@ -81,26 +94,9 @@ nav ul li a:hover{
 /* content */
 .content{
 	background: #F8F8F8;
-	opacity: 0;	
+	opacity: 1;	
 }
 /* /content */
-
-/* swicth toggle */
-.switchIndo{
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 10px;
-}
-.switchIndo img{
-	height: 25px;
-	margin-top: -5px;
-}
-.swicthIndo .custom-control-input:checked ~ .switchIndo img {
-	height: 50px;
-	width: 50px;
-}
-
-/* /swicth toggle */
 
 /* header */
 .header{
@@ -341,6 +337,12 @@ nav ul li a:hover{
 	nav ul{
 		width: 20%;
 	}
+	nav ul li select{
+		margin-left: 0;
+		font-size: 0.9em;
+		padding: 0 5px;
+		width: auto;
+	}
 	/* /navbar */
 
 	/* portfolio */
@@ -414,6 +416,15 @@ nav ul li a:hover{
 		position: relative;
 		z-index: 1;
 	}
+	nav ul li select{
+		font-size: 0.9em;
+		border-radius:50px;
+		padding: 0 10px;
+		width: 180px;
+		outline: none;
+		color: grey;
+		background: none !important;
+	}
 	/* /navbar */
 
 	/* content */
@@ -423,14 +434,7 @@ nav ul li a:hover{
 	}
 	/* /content */
 
-	/* swicth toggle */
-	.switchIndo img{
-		height: 20px;
-		margin-top: -5px;
-		margin-right: 15px;
-	}
 
-	/* /swicth toggle */
 
 
 	/* header */
@@ -517,7 +521,6 @@ nav ul li a:hover{
 	.portfolio .text{
 		display: block;		
 		font-size: 13px !important;
-		line-height: 18px;
 		text-align: center;	
 	}
 	.portfolio .livePreview{

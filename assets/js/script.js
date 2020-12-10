@@ -17,12 +17,12 @@ $(document).ready(function(){
 		imageColor      : "#03a9f4"
 	});
 
-	$.LoadingOverlay("show");
+	// $.LoadingOverlay("show");
 
-	setTimeout(function	(){
-		$.LoadingOverlay("hide");
-		document.querySelector('.content').style.opacity = 1;
-	}, 2000);
+	// setTimeout(function	(){
+	// 	$.LoadingOverlay("hide");
+	// 	document.querySelector('.content').style.opacity = 1;
+	// }, 2000);
 
 });
 
@@ -54,31 +54,27 @@ var swiper = new Swiper('.swiper-container', {
       		spaceBetween: 40,
       	},
       }
-  });
-
-
-// Switch Language
-const switchToggle = document.getElementById('customSwitch');
-switchToggle.addEventListener('change', () =>{
-      switchToggle.classList.toggle('aktif');
-
-      const check = document.querySelector('#customSwitch.aktif');
-      const indo = document.querySelectorAll('.in');
-      const eng = document.querySelectorAll('.en');
-      if(check){
-            for(let i = 0; i<indo.length; i++){
-                  indo[i].style.display = 'block';
-            }
-            for(let j = 0; j<eng.length; j++){
-                  eng[j].style.display = 'none';
-            }
-      }else{
-            for(let i = 0; i<indo.length; i++){
-                  indo[i].style.display = 'none';
-            }
-            for(let j = 0; j<eng.length; j++){
-                  eng[j].style.display = 'block';
-            }
-      }
 });
 
+
+// switch lang
+const lang = document.getElementById('switchLang');
+lang.addEventListener('click', function(){
+      const indo = document.querySelectorAll('.in');
+      const eng = document.querySelectorAll('.en');
+      if(this.value == 'Indonesia'){
+       for(let i = 0; i<indo.length; i++){
+            indo[i].style.display = 'block';
+      }
+      for(let j = 0; j<eng.length; j++){
+            eng[j].style.display = 'none';
+      }
+}else{
+      for(let i = 0; i<indo.length; i++){
+            indo[i].style.display = 'none';
+      }
+      for(let j = 0; j<eng.length; j++){
+            eng[j].style.display = 'block';
+      }
+}
+});
