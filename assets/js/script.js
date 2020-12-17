@@ -59,22 +59,24 @@ var swiper = new Swiper('.swiper-container', {
 
 // switch lang
 const lang = document.getElementById('switchLang');
-lang.addEventListener('click', function(){
+lang.addEventListener('change', function(){
       const indo = document.querySelectorAll('.in');
       const eng = document.querySelectorAll('.en');
       if(this.value == 'Indonesia'){
-       for(let i = 0; i<indo.length; i++){
-            indo[i].style.display = 'block';
+            for(let i = 0; i<indo.length; i++){
+                  indo[i].style.display = 'block';
+            }
+            for(let j = 0; j<eng.length; j++){
+                  eng[j].style.display = 'none';
+            }
+      }else{
+            for(let i = 0; i<indo.length; i++){
+                  indo[i].style.display = 'none';
+            }
+            for(let j = 0; j<eng.length; j++){
+                  eng[j].style.display = 'block';
+            }
       }
-      for(let j = 0; j<eng.length; j++){
-            eng[j].style.display = 'none';
-      }
-}else{
-      for(let i = 0; i<indo.length; i++){
-            indo[i].style.display = 'none';
-      }
-      for(let j = 0; j<eng.length; j++){
-            eng[j].style.display = 'block';
-      }
-}
+
 });
+
