@@ -7,29 +7,25 @@ menu.addEventListener('click', () => {
 	nav.classList.toggle('slide');
 });
 
-// loading overlay
-$(document).ready(function(){
+// // loading overlay
+// $(document).ready(function(){
 	
-	$.LoadingOverlaySetup({
-		background      : "rgba(0, 0, 0, 0.5)",
-		image: "assets/image/clock.svg",
-		imageAnimation  : "1.3s fadein",
-		imageColor      : "#03a9f4"
-	});
+// 	$.LoadingOverlaySetup({
+// 		background      : "rgba(0, 0, 0, 0.5)",
+// 		image: "assets/image/clock.svg",
+// 		imageAnimation  : "1.3s fadein",
+// 		imageColor      : "#03a9f4"
+// 	});
 
-	$.LoadingOverlay("show");
+// 	$.LoadingOverlay("show");
 
-	setTimeout(function(){
-		$.LoadingOverlay("hide");
-		document.querySelector('.content').style.opacity = 1;
-	}, 2000);
+// 	setTimeout(function(){
+// 		$.LoadingOverlay("hide");
+// 		document.querySelector('.content').style.opacity = 1;
+// 	}, 2000);
 
-});
+// });
 
-// change position in mobile 
-if( $(window).width() < 768 ){
-	$('#descPort').addClass('order-last');
-};	
 
 // swiper
 var swiper = new Swiper('.swiper-container', {
@@ -80,3 +76,6 @@ lang.addEventListener('change', function(){
 
 });
 
+window.addEventListener('load', () =>{
+	AOS.init();
+});
